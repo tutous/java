@@ -6,12 +6,7 @@
 			<attribute name="module" value="true"/>
 		</attributes>
 	</classpathentry>
-	<classpathentry combineaccessrules="false" kind="src" path="/lesson01-org.astro">
-		<attributes>
-			<attribute name="module" value="true"/>
-		</attributes>
-	</classpathentry>
-	<classpathentry combineaccessrules="false" kind="src" path="/lesson01-org.greetings">
+	<classpathentry combineaccessrules="false" kind="src" path="/lesson02-com.socket">
 		<attributes>
 			<attribute name="module" value="true"/>
 		</attributes>
