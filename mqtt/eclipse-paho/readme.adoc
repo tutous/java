@@ -1,0 +1,27 @@
+= Introduction
+
+This examples shows the MQTT publish and subscribe functionality to HiveMQ and ActiveMQ broker. +
+The MQTT client is based on the eclipse paho client lib's. +
+
+= MQTT Features
+
+* implements the brokered *publish and subscribe* pattern
+* MQTT has 14 different *message types*
+* only the CONNECT, PUBLISH, SUBSCRIBE, and UNSUBSCRIBE message types are need by the end user
+* a *topic* is a UTF-8 string, which is used by the broker to decide which message should be apply to the connected clients
+* each MQTT message is published with one of three *quality of service* (QoS) levels
+** 0 -most once
+** 1 - least once
+** 2 - exactly once
+* a *last will and testament* (LWT) message can be specified by an MQTT client 
+* each published MQTT message can be sent as a *retained message*
+* when a client connects to an MQTT broker, it has the choice of requesting a *persistent session*
+
+= Link's
+
+* https://mqtt.org/[MQTT.org]
+* https://docs.oasis-open.org/mqtt/mqtt/v3.1.1/os/mqtt-v3.1.1-os.html[MQTT Specification Version 3.1.1]
+* https://eclipse.org/paho/clients/java/[Eclipse Paho Project]
+* https://www.hivemq.com/[HiveMQ Broker]
+* http://activemq.apache.org/[ActiveMQ Broker]
+* https://dzone.com/refcardz/getting-started-with-mqtt[Getting Started With MQTT]
