@@ -1,5 +1,3 @@
-module com.socket {
-	exports com.socket;
-	exports com.socket.spi;
-	uses com.socket.spi.NetworkSocketProvider;
+module de.tutous.socket.spi {
+	exports de.tutous.socket.spi;
 }

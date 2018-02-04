@@ -6,17 +6,17 @@
 			<attribute name="module" value="true"/>
 		</attributes>
 	</classpathentry>
-	<classpathentry combineaccessrules="false" kind="src" path="/lesson02-org.fastsocket">
+	<classpathentry combineaccessrules="false" kind="src" path="/lesson-02-de.tutous.socket.fast">
 		<attributes>
 			<attribute name="module" value="true"/>
 		</attributes>
 	</classpathentry>
-	<classpathentry combineaccessrules="false" kind="src" path="/lesson02-com.socket">
+	<classpathentry combineaccessrules="false" kind="src" path="/lesson-02-de.tutous.socket.slow">
 		<attributes>
 			<attribute name="module" value="true"/>
 		</attributes>
 	</classpathentry>
-	<classpathentry combineaccessrules="false" kind="src" path="/lesson02-org.slowsocket">
+	<classpathentry combineaccessrules="false" kind="src" path="/lesson-02-de.tutous.socket.spi">
 		<attributes>
 			<attribute name="module" value="true"/>
 		</attributes>

@@ -1,3 +1,4 @@
-module com.socket.app {
-	requires com.socket;
+module de.tutous.socket.app {
+	requires de.tutous.socket.spi;
+	uses de.tutous.socket.spi.NetworkSocket;
 }

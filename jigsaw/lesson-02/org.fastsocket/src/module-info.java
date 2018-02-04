@@ -1,4 +1,4 @@
-module org.fastsocket {
-	requires com.socket;
-	provides com.socket.spi.NetworkSocketProvider with org.fastsocket.FastNetworkSocketProvider;
+module de.tutous.socket.fast {
+	requires de.tutous.socket.spi;
+	provides de.tutous.socket.spi.NetworkSocket with de.tutous.socket.fast.FastNetworkSocketProvider;
 }

@@ -1,0 +1,1 @@
+java -p myapp/target/lesson-04-myapp-1.0.0-SNAPSHOT.jar:myutil/target/lesson-04-myutil-1.0.0-SNAPSHOT.jar -m de.tutous.myapp/de.tutous.myapp.MyApp
