@@ -8,7 +8,7 @@ import java.util.concurrent.TimeUnit;
 import rx.Observable;
 import rx.schedulers.TestScheduler;
 
-public class SampleFlatMap {
+public class SampleFromFlatMap {
 
 	/**
 	 * FlatMap

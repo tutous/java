@@ -8,18 +8,16 @@ import java.util.concurrent.TimeUnit;
 import rx.Observable;
 import rx.schedulers.TestScheduler;
 
-public class SampleSwitchMap {
+public class SampleFromConcatMap {
 
 	/**
-	 * SwitchMap
+	 * ConcatMap
 	 * 
-	 * The same test of FlatMap, the same conditions, but with operator switchMap
-	 * instead of flatMap.
+	 * The same test, now with concatMap operator
 	 * 
-	 * Whenever a new item is emitted by the source Observable, it will unsubscribe
-	 * to and stop mirroring the Observable that was generated from the
-	 * previously-emitted item, and begin only mirroring the current one.
-	 * 
+	 * ConcatMap works almost the same as flatMap, but preserves the order of items.
+	 * But concatMap has one big flaw: it waits for each observable to finish all
+	 * the work until next one is processed. Lets see how it works in example.
 	 */
 	public static void main(String[] args) {
 
@@ -28,7 +26,7 @@ public class SampleSwitchMap {
 		final TestScheduler scheduler = new TestScheduler();
 
 		Observable.from(items)//
-				.switchMap(s -> {
+				.concatMap(s -> {
 					return Observable.just(s)//
 							.delay(new Random().nextInt(10), TimeUnit.SECONDS, scheduler) //
 							.doOnEach(a -> {
@@ -44,5 +42,4 @@ public class SampleSwitchMap {
 		scheduler.advanceTimeBy(1, TimeUnit.MINUTES);
 
 	}
-
 }
